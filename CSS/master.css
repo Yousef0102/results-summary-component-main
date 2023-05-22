@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--Pale-blue);
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 18px;
+}
+/* Start Design */
+main {
+  height: 100vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .result {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  width: 300px;
+  border-radius: 15px;
+}
+main .result h2 {
+}
+main .result .res {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+}
+main .result .res div {
+  font-size: 55px;
+  font-weight: bold;
+  position: absolute;
+}
+main .result .res span {
+  position: absolute;
+  top: 100px;
+  color: var(--Light-lavender);
+  font-size: 14px;
+  font-weight: 100;
+}
+main .result .congrats {
+}
+main .result .congrats h2 {
+  padding: 20px;
+}
+main .result .congrats p {
+  padding: 20px;
+  font-weight: 100;
+  color: var(--Pale-blue);
+}
+main .summary {
+  width: 300px;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 4px 4px 11px 0px hsl(256deg 72% 46% / 18%);
+}
+main .summary h2 {
+  padding: 20px;
+  color: var(--Dark-gray-blue);
+}
+main .summary ul {
+}
+main .summary ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  margin: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+main .summary ul li.reaction {
+  background-color: #ff000017;
+}
+main .summary ul li.memory {
+  background-color: #ffb01f17;
+}
+main .summary ul li.verbal {
+  background-color: #00bd9117;
+}
+main .summary ul li.visual {
+  background-color: #2e2be917;
+}
+main .summary ul li div img {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+}
+main .summary ul li div:first-child {
+  margin-left: 15px;
+}
+main .summary ul li div.reaction {
+  color: hsl(0deg 100% 58.23%);
+}
+main .summary ul li div.memory {
+  color: var(--Orangey-yellow);
+}
+main .summary ul li div.verbal {
+  color: var(--Green-teal);
+}
+main .summary ul li div.visual {
+  color: var(--Light-royal-blue);
+}
+main .summary ul li div:last-child {
+}
+main .summary ul li div:last-child span {
+  color: #777;
+  font-size: 15px;
+}
+main .summary button.btn {
+  padding: 10px 20px;
+  width: 70%;
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  color: white;
+  margin: 10px 0 10px 40px;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: .3s;
+}
+main .summary button.btn:hover {
+  background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsla(256, 72%, 46%, 1));
+}
+/* End Design */
